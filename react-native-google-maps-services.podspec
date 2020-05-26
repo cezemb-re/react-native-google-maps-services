@@ -9,14 +9,14 @@ Pod::Spec.new do |s|
   s.description  = <<-DESC
                   react-native-google-maps-services
                    DESC
-  s.homepage     = "https://github.com/lucien-perouze-cezembre/react-native-google-maps-services"
+  s.homepage     = "https://github.com/cezemb-re/react-native-google-maps-services"
   # brief license entry:
   s.license      = "MIT"
   # optional - use expanded license entry instead:
   # s.license    = { :type => "MIT", :file => "LICENSE" }
   s.authors      = { "Lucien Perouze" => "lucien.perouze@cezembre.co" }
   s.platforms    = { :ios => "9.0" }
-  s.source       = { :git => "https://github.com/lucien-perouze-cezembre/react-native-google-maps-services.git", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/cezemb-re/react-native-google-maps-services.git", :tag => "#{s.version}" }
 
   s.source_files = "ios/**/*.{h,c,m,swift}"
   s.requires_arc = true
