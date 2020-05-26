@@ -3,16 +3,18 @@
   "title": "React Native Google Maps Services",
   "version": "1.0.0",
   "description": "TODO",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "files": [
     "README.md",
     "android",
-    "index.js",
     "ios",
-    "react-native-google-maps-services.podspec"
+    "react-native-google-maps-services.podspec",
+    "dist"
   ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "eslint --ext .ts \"src/**/*.{ts, tsx}\"",
+    "build": "tsc"
   },
   "repository": {
     "type": "git",
@@ -20,7 +22,14 @@
     "baseUrl": "https://github.com/lucien-perouze-cezembre/react-native-google-maps-services"
   },
   "keywords": [
-    "react-native"
+    "react-native",
+    "google",
+    "maps",
+    "services",
+    "places",
+    "autocomplete",
+    "android",
+    "ios"
   ],
   "author": {
     "name": "Lucien Perouze",
@@ -34,7 +43,23 @@
     "react-native": ">=0.60.0-rc.0 <1.0.x"
   },
   "devDependencies": {
+    "@types/react": "^16.9.35",
+    "@types/react-native": "^0.62.11",
+    "@typescript-eslint/eslint-plugin": "^3.0.1",
+    "@typescript-eslint/parser": "^3.0.1",
+    "eslint": "^7.1.0",
+    "eslint-config-airbnb": "^18.1.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-prettier": "^3.1.3",
+    "eslint-plugin-react": "^7.20.0",
+    "eslint-plugin-react-hooks": "^4.0.2",
+    "eslint-plugin-react-native": "^3.8.1",
+    "prettier": "^2.0.5",
     "react": "^16.9.0",
-    "react-native": "^0.61.5"
-  }
+    "react-native": "^0.61.5",
+    "typescript": "^3.9.3"
+  },
+  "dependencies": {}
 }
