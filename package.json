@@ -1,7 +1,7 @@
 {
   "name": "@cezemb-re/react-native-google-maps-services",
   "title": "React Native Google Maps Services",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "React Native library to use Google Maps Services on Android and IOS from their native official SDK's",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -18,14 +18,17 @@
     "build": "tsc",
     "prepare": "npm run build",
     "prepublishOnly": "npm run lint",
-    "preversion": "npm run lint"
+    "preversion": "npm run lint",
+    "release": "semantic-release"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/cezemb-re/react-native-google-maps-services.git",
     "baseUrl": "https://github.com/cezemb-re/react-native-google-maps-services"
   },
-  "publishConfig": { "registry": "https://npm.pkg.github.com/" },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
   "keywords": [
     "react-native",
     "google",
@@ -61,6 +64,7 @@
     "prettier": "^2.0.5",
     "react": "^16.9.0",
     "react-native": "^0.61.5",
+    "semantic-release": "^17.0.8",
     "typescript": "^3.9.3"
   },
   "dependencies": {},
